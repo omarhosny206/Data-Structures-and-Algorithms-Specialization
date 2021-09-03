@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int Partiton(int items[], int Left, int Right)
+int Partition(int items[], int Left, int Right)
 {
 
     int Pivot = items[Left];
@@ -36,7 +36,7 @@ void quickSort(int items[], int Left, int Right)
     if (Left < Right)
     {
 
-        int Pivot = Partiton(items, Left, Right);
+        int Pivot = Partition(items, Left, Right);
 
         // for sorting leftSubArray
         quickSort(items, Left, Pivot);
